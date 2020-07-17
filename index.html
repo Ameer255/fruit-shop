@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age verify</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+
+<body>
+    <header>
+        <h3>Welcome To Fruit Shop</h3>
+    </header>
+
+
+    <div class="output">
+
+        <div id="input">
+
+            <label for="budget">Enter Your Budget</label>
+            <input type="number" id="budget" value="0">
+
+            <button onclick="addBudget()">Submit</button>
+        </div>
+
+        <div id="output">
+            
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="item">
+            <div class="name">
+
+                <img src="https://img.pngio.com/three-honeycrisp-apples-apple-juice-fruit-seed-ripe-red-apples-red-apple-background-png-800_658.jpg"
+                    alt="apples image" />
+            </div>
+
+            <div class="price">
+                <h2>Rs 10</h2>
+            </div>
+
+            <div class="actionbuttons">
+
+                <div><button name="apple" class="buy" value="10" onclick="buy(this)">+</button></div>
+
+                <div class="quantity"><button class="itemQuantity" value="0" id="apple">0</button></div>
+
+                <div><button class="cancelbtn"  id="applebtn" name="apple" value="10"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+            <div class="name">
+                <img src="https://lh3.googleusercontent.com/proxy/B7_mdLFJK8VoGmKDpwWuFycj6Ko1isPe0XkLLNviP3Nob06OWoipV1h5aT1nQ38mNazjkzLpbV_eT-cCI1zPKPp4SO_uswVrG5Ghf6ycYA"
+                    alt="mango image">
+            </div>
+
+            <div class="price">
+                <h2>Rs 15</h2>
+            </div>
+
+            <div class="actionbuttons">
+
+                <div><button name="mango" class="buy" value="15" onclick="buy(this)">+</button></div>
+
+                <div class="quantity"><button class="itemQuantity" value="0" id="mango">0</button></div>
+
+                <div><button class="cancelbtn"  id="mangobtn" name="mango" value="15"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="item">
+            <div class="name">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWx9qHJcs9X80vTE7i2CenVb6Vx-cDdNni_Q&usqp=CAU"
+                    alt="orange image">
+            </div>
+
+            <div class="price">
+                <h2>Rs 20</h2>
+            </div>
+
+            <div class="actionbuttons">
+                <div><button name="orange" class="buy" value="20" onclick="buy(this)">+</button></div>
+
+                <div class="quantity">
+                    <button class="itemQuantity" value="0" id="orange">0</button>
+                </div>
+                <div><button class="cancelbtn"  id="orangebtn" name="orange" value="20"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+
+        <div class="item">
+            <div class="name">
+                <img src="https://www.pngitem.com/pimgs/m/110-1103701_peach-transparent-background-hd-png-download.png"
+                    alt="peach image">
+            </div>
+
+            <div class="price">
+                <h2>Rs 35</h2>
+            </div>
+
+            <div class="actionbuttons">
+
+                <div><button name="peach" class="buy" value="35" onclick="buy(this)">+</button></div>
+
+                <div class="quantity"><button class="itemQuantity" value="0" id="peach">0</button></div>
+
+                <div><button class="cancelbtn"  id="peachbtn" name="peach" value="35"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+        <div class="item">
+            <div class="name">
+                <img src="https://lh3.googleusercontent.com/proxy/Gqhgl1JM0xfrtPhSvsz18P_ofS4gUf-1eIGQx7eJcEGrJ_s6IWy2vRmVqwQkBQDSB_hpcMQaijey2hSVrETm4-00e79Wq_AdISRtLRdzBu2-BEeqzgMwMOxUtZspGXPNM2Yq"
+                    alt="pear image">
+            </div>
+
+            <div class="price">
+                <h2>Rs 40</h2>
+            </div>
+
+            <div class="actionbuttons">
+
+                <div><button name="pear" class="buy" value="40" onclick="buy(this)">+</button></div>
+
+                <div class="quantity"><button class="itemQuantity" value="0" id="pear">0</button></div>
+
+                <div><button class="cancelbtn"  id="pearbtn" name="pear" value="40"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+        <div class="item">
+            <div class="name">
+                <img src="https://lh3.googleusercontent.com/proxy/dvojs49Mjnvj0O8VPNhvJW9yeUA6Xx_G0deP8CNEY8SfLQPDOlYujvbFY7jDvdTTa0y3Epcwi8j2bOuECDg6l9WToi5qZ1IHML8slxxdnqsKn3F6lQ"
+                    alt="banana image">
+            </div>
+
+            <div class="price">
+                <h2>Rs 15</h2>
+            </div>
+
+            <div class="actionbuttons">
+
+                <div><button name="banana" class="buy" value="15" onclick="buy(this)">+</button></div>
+
+                <div class="quantity"><button class="itemQuantity" value="0" id="banana">0</button></div>
+
+                <div><button class="cancelbtn"  id="bananabtn" name="banana" value="15"
+                        onclick="cancel(this)">-</button></div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

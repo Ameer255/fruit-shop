@@ -1,0 +1,172 @@
+body{
+    color: white;
+    
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+header{
+    text-align: center;
+    background-color: rgb(10, 32, 10);
+    padding: 20px 10px;
+    
+}
+#output{
+    
+    width: 45%;
+    margin-left: 40px;
+
+}
+#output h4{
+    margin: 0 0 7% 0;
+}
+
+.output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+
+}
+.output label{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#input{
+    width: 45%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+#input input{
+    padding: 5px;
+    font-weight: bold;
+    font-size: larger;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 4px solid rgb(245, 48, 48);
+    max-width: 100px;
+}
+#input button{
+    padding: 5px 25px;
+    cursor: pointer;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: none;
+    color: white;
+    background-color: rgb(4, 55, 68);
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 2% 3%;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-top: 5%;
+    justify-content: center;
+    padding: 2% 3%;
+    
+}
+.name {
+    width: 94%;
+    height: 200px;
+}
+.actionbuttons, .price{
+    width: 90%;
+    height: 13%;
+}
+.name img{
+    width: 100%;
+    height: 100%;
+}
+#output{
+    margin-top: 5%;
+}
+
+.name, .price, .actionbuttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actionbuttons{
+    justify-content: center;
+    align-items: center;
+}
+
+.actionbuttons button{
+    padding: 5px 25px;
+    
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: none;
+    color: white;
+
+}
+.quantity{
+    margin: 0 20px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.itemQuantity{
+    background-color: rgb(4, 55, 68);
+}
+.buy {
+    background-color: rgb(7, 136, 7);
+    cursor: pointer;
+
+
+}
+.cancelbtn{
+    background-color: rgb(236, 57, 26);
+    cursor: pointer;
+
+}
+.buy:disabled, .cancelbtn:disabled{
+    opacity: 0.4;
+}
+.price{
+    color: rgb(219, 49, 49);
+}
+
+
+
+
+@media screen and (min-width:500px){
+    .item{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:850px){
+    .item{
+        width: 25%;
+    }
+}
+
