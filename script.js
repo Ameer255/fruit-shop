@@ -25,6 +25,8 @@ var qOfItem = 0;
 
 //function for adding a fruit to cart
 function buy(fruit) {
+
+
     //getting current fruit's price
 	price = parseInt(fruit.value);
 
@@ -37,6 +39,8 @@ function buy(fruit) {
      //assigning value of quantity to the variable
 	qOfItem = parseInt(currentFruit.value);
 
+	if (budget>price)
+	{
 	
 	qOfItem++;
 	currentFruit.value = qOfItem;
@@ -48,6 +52,11 @@ function buy(fruit) {
 
 	//writting updated data to the output
 	output.innerHTML = "<h4> Budget : " + budget + "</h4> <h4> Total : " + total + "</h4>"+ "<h4> Balance : " + balance + "</h4>";
+	}
+
+	else{
+		alert("Not enough balance");
+	}
 
 //Disabling buy buttons of the fruits whose price is greater than balance
 	let button = document.querySelectorAll(".buy");
