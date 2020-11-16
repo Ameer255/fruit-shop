@@ -67,6 +67,8 @@ header{
     border: 2px solid rgb(247, 54, 54);
     max-width: 80%;
 }
+
+
 #input button{
     padding: 5px 25px;
     cursor: pointer;
@@ -184,7 +186,6 @@ header{
         width: 25%;
     }
 }
-
 
 @media screen and (max-width:600px){
 		#input{
